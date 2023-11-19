@@ -1,7 +1,12 @@
 import './App.css';
-import {NewComponent} from "./components/newComponent/NewComponent";
 
-const students = [
+export type studentType = {
+    id: number
+    name: string
+    age: number
+}
+
+const students: Array<studentType> = [
     {id: 1, name: "James", age: 8},
     {id: 2, name: "Robert", age: 18},
     {id: 3, name: "John", age: 28},
@@ -15,7 +20,12 @@ const students = [
     {id: 11, name: "Christopher", age: 100},
 ]
 
-const topCars = [
+export type topCarType = {
+    manufacturer: string
+    model: string
+}
+
+const topCars: Array<topCarType> = [
     {manufacturer: 'BMW', model: 'm5cs'},
     {manufacturer: 'Mersedes', model: 'e63s'},
     {manufacturer: 'Audi', model: 'rs6'}
@@ -23,7 +33,10 @@ const topCars = [
 
 function App() {
     return (
-        <NewComponent students={students} topCars={topCars}/>
+        <>
+            {/*<NewComponent students={students} topCars={topCars}/>
+            <MetodFilter/>*/}
+        </>
     );
 }
 
