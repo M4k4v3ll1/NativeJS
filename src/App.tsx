@@ -1,4 +1,5 @@
 import './App.css';
+import NativeJSZoom19112023 from "./nativeJS-zom-19112023/NativeJS-zoom-19112023";
 
 export type studentType = {
     id: number
@@ -36,6 +37,7 @@ function App() {
         <>
             {/*<NewComponent students={students} topCars={topCars}/>
             <MetodFilter/>*/}
+            <NativeJSZoom19112023/>
         </>
     );
 }

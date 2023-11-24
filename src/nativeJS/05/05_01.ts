@@ -48,3 +48,7 @@ const dev4 = people.map(man => ({
 export const createGreetingMessage = (people: Array<peopleType>) => {
     return people.map(people => `Hello ${people.name.split(' ')[0]}. Welcome to Earth`)
 }
+
+export const createReportForSoldier = (people: Array<peopleType>) => {
+    return people.map(p => `Hello soldier ${p.name.split(' ')[1]} ${p.name.split(' ')[0]}. ${p.age} years you prepered for this big honor to protect your country!`)
+}

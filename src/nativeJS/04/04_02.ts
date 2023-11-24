@@ -27,5 +27,5 @@ export function demolishHousesOnTheStreet (city: CityType, street: string) {
 }
 
 export function getBuildingsWithStaffCountGreatherThen(buildings: Array<governmentBuildingsType>, staffCount: number) {
-    return buildings = buildings.filter(b => b.staffCount > staffCount)
+    return buildings.filter(b => b.staffCount > staffCount)
 }
